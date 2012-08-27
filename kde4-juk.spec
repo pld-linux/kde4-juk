@@ -1,45 +1,28 @@
 %define		_state		stable
 %define		orgname		juk
 %define		qtver		4.8.1
-%define		taglib_ver	1.5
 
 Summary:	A jukebox like program
 Summary(pl.UTF-8):	Program spełniający funkcję szafy grającej
 Name:		kde4-%{orgname}
 Version:	4.9.0
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	d53f4db74c88bf84d5641242aa0785d9
-BuildRequires:	Qt3Support-devel >= %{qtver}
-BuildRequires:	QtSvg-devel >= %{qtver}
-BuildRequires:	QtTest-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.88
-BuildRequires:	cdparanoia-III-devel
 BuildRequires:	cmake >= 2.8.0
-BuildRequires:	ffmpeg-devel >= 0.8
-BuildRequires:	flac-devel >= 1.1.2
-BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	kde4-kdelibs-devel >= %{version}
-BuildRequires:	libmusicbrainz3-devel >= 1:3.0.0
-BuildRequires:	libogg-devel
-BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtunepimp-devel
-BuildRequires:	libvorbis-devel
-BuildRequires:	phonon-devel >= 4.4.1
 BuildRequires:	pkgconfig
-BuildRequires:	pulseaudio-devel
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
-BuildRequires:	taglib-devel >= %{taglib_ver}
-BuildRequires:	xine-lib-devel >= 1:1.0
-BuildRequires:	xorg-lib-libXpm-devel
-BuildRequires:	zlib-devel
+BuildRequires:	taglib-devel >= 1.5
 Requires:	kde4-kdebase >= %{version}
-Requires:	taglib >= %{taglib_ver}
+Requires:	taglib >= 1.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

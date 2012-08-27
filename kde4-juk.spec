@@ -6,7 +6,7 @@ Summary:	A jukebox like program
 Summary(pl.UTF-8):	Program spełniający funkcję szafy grającej
 Name:		kde4-%{orgname}
 Version:	4.9.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
@@ -23,6 +23,7 @@ BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	taglib-devel >= 1.5
 Requires:	kde4-kdebase >= %{version}
 Requires:	taglib >= 1.5
+Obsoletes:	kde4-kdemultimedia-juk < 4.8.99-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

@@ -5,7 +5,7 @@
 
 Summary:	A jukebox like program
 Summary(pl.UTF-8):	Program spełniający funkcję szafy grającej
-Name:		kde4-kdemultimedia
+Name:		kde4-%{orgname}
 Version:	4.9.0
 Release:	0.1
 License:	GPL v2+

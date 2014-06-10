@@ -5,12 +5,12 @@
 Summary:	A jukebox like program
 Summary(pl.UTF-8):	Program spełniający funkcję szafy grającej
 Name:		kde4-%{orgname}
-Version:	4.13.1
+Version:	4.13.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	eb91cd20231767eea614c392b2230e99
+# Source0-md5:	b609bb249faec02a24072ea569cb881a
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}

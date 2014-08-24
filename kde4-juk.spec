@@ -5,12 +5,12 @@
 Summary:	A jukebox like program
 Summary(pl.UTF-8):	Program spełniający funkcję szafy grającej
 Name:		kde4-%{orgname}
-Version:	4.13.2
+Version:	4.14.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	b609bb249faec02a24072ea569cb881a
+Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
+# Source0-md5:	49ea0144cd39fd9392cb82a76bb467f0
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f juk.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/juk
+%{_datadir}/appdata/juk.appdata.xml
 %{_datadir}/apps/juk
 %{_datadir}/kde4/services/ServiceMenus/jukservicemenu.desktop
 %{_desktopdir}/kde4/juk.desktop
